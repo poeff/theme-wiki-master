@@ -1,0 +1,196 @@
+/*
+Theme Name: POEFF Wiki
+Theme URI: https://wordpress.org/themes/twentyfifteen
+Author: Ryan Saunders
+Author URI: http://ryanjsaunders.com/
+Description: Wiki for POEFF Resources
+Version: 1.0
+Template:     twentyfifteen
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, blue, gray, pink, purple, white, yellow, dark, light, two-columns, left-sidebar, fixed-layout, responsive-layout, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
+Text Domain: poeff-wiki
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+@import url("../twentyfifteen/style.css");
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700);
+/*@import url("/css/style.css");*/
+.futura-300 {
+  font-family: 'futura-pt', sans-serif;
+  font-weight: 300;
+}
+.futura-400 {
+  font-family: 'futura-pt', sans-serif;
+  font-weight: 400;
+}
+.futura-500 {
+  font-family: 'futura-pt', sans-serif;
+  font-weight: 500;
+}
+.futura-700 {
+  font-family: 'futura-pt', sans-serif;
+  font-weight: 700;
+}
+.opensans-300 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300; 
+}
+.opensans-400 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400; 
+}
+.opensans-600 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600; 
+}
+.opensans-700 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700; 
+}
+.site-title {
+  font-family: 'futura-pt', sans-serif;
+  font-weight: 500;
+  font-size: 3rem;
+}
+.site-description {
+  font-family: 'futura-pt', sans-serif;
+  font-weight: 300;
+  opacity: 1;
+}
+.main-navigation ul, .main-navigation li, .secondary-toggle, .widget input, .widget textarea, .widget table, .widget th, .widget td, .widget pre, .widget li, .widget_categories .children, .widget_nav_menu .sub-menu, .widget_pages .children, .widget abbr[title] {
+  border-color: rgba(255, 255, 255, 0.66) !important;
+}
+.site-title a:hover, .site-title a:focus, .secondary a:hover, .secondary a:focus {
+  color: #fab800 !important;
+}
+.secondary.toggled-on a:hover, .secondary.toggled-on a:focus {
+  color: #0094c1 !important;
+}
+.category-brand-guidelines .page-header {
+  border-left: 7px solid #80c247;
+}
+.category-knowledge-base .page-header {
+  border-left: 7px solid #f0583f;
+}
+.entry-footer {
+  background-color: #0094c1;
+  color: #fff;
+  font-family: "futura-pt",sans-serif;
+  font-weight: 300;
+  padding: 3% 10%;
+}
+.category-brand-guidelines .entry-footer {
+  background-color: #80c247;
+}
+.category-knowledge-base .entry-footer {
+  background-color: #f0583f;
+}
+.entry-footer a,
+.entry-footer a:hover, .entry-footer a:focus {
+  color: #fff;
+}
+.entry-footer a:hover {
+  border-bottom: 1px solid #fff;
+}
+.page-title {
+  font-size: 3rem;
+  font-family: "futura-pt",sans-serif;
+  font-weight: 500;
+}
+.taxonomy-description {
+  font-family: "futura-pt",sans-serif;
+  font-weight: 300;
+}
+.site-footer {
+  box-shadow: none;
+  background-color: transparent;
+}
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  background-color: #0094c1;
+}
+.list-unstyled {
+  list-style: outside none none;
+  padding-left: 0;
+}
+.list-inline {
+  list-style: outside none none;
+  margin-left: -5px;
+  padding-left: 0;
+}
+.list-inline > li {
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.dl-horizontal dt {
+  clear: left;
+  float: left;
+  overflow: hidden;
+  text-align: right;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 160px;
+}
+.dl-horizontal dd {
+  margin-left: 180px;
+}
+.brand-colors {
+  font-family: "futura-pt",sans-serif;
+  font-size: 66%;
+  margin-top: -15px;
+}
+.brand-colors > li {
+  min-width: 145px;
+  padding: 15px 10px 0 0;
+  width: 24%;
+}
+.swatch {
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+  display: block;
+  height: 85px;
+  width: 100%;
+}
+.brand-colors h5 {
+  font-weight: 300;
+  letter-spacing: normal;
+  margin: 8px 0;
+  text-align: center;
+  text-transform: none;
+}
+.brand-colors dl {
+  margin-bottom: 0;
+}
+.brand-colors dt {
+/*  border-top: 1px solid rgba(80, 80, 80, 0.25);*/
+  padding: 2px 0;
+  text-align: left;
+  width: 50px;
+}
+.brand-colors dd {
+/*  border-top: 1px solid rgba(80, 80, 80, 0.25);*/
+  margin-bottom: 0;
+  margin-left: 50px;
+  padding: 2px 0 2px 12px;
+}
+.brand-type .dl-horizontal dt {
+  text-align: left;
+}
+.brand-type .dl-horizontal dd > span {
+  font-size: 2.5rem;
+  letter-spacing: 0.1em;
+}
+.list-inline.alt-type {
+  margin-left: -28px;
+  width: 100%;
+}
+.alt-type li {
+  font-size: 1.25em;
+  text-align: center;
+  width: 18%;
+}
+.alt-type li > small {
+  font-size: 0.55em;
+}
